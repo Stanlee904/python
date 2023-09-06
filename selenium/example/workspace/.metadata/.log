@@ -1,0 +1,85 @@
+!SESSION 2023-08-22 17:56:10.405 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_15
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ko_KR
+Framework arguments:  -pluginCustomization customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86 -pluginCustomization customization.ini
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.836
+!MESSAGE NLS unused message: AdapterIdSearchDialog_btnNewButton_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.837
+!MESSAGE NLS unused message: AdapterIdSearchDialog_lblNewLabel_1_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.837
+!MESSAGE NLS unused message: AdapterIdSearchDialog_lblNewLabel_1_text_1 in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.838
+!MESSAGE NLS unused message: AdapterIdSearchDialog_lblNewLabel_2_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.839
+!MESSAGE NLS unused message: AdapterIdSearchDialog_lblNewLabel_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.839
+!MESSAGE NLS unused message: AdapterIdSearchDialog_lblNewLabel_text_1 in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.841
+!MESSAGE NLS unused message: f#Eclipse in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.842
+!MESSAGE NLS missing message: DIALOG_DATASERVICE_TITLE in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.842
+!MESSAGE NLS missing message: DIALOG_DATASERVICE_DESC in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.842
+!MESSAGE NLS missing message: InterfaceEditor_group_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.843
+!MESSAGE NLS missing message: InterfaceEditor_linkServiceRequestRecordId_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.843
+!MESSAGE NLS missing message: InterfaceEditor_linkServiceResponseRecordId_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.844
+!MESSAGE NLS missing message: NewInteroperabilityDataWizardPage_lblNewLabel_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.844
+!MESSAGE NLS missing message: DataServicePropertyPage_group_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.845
+!MESSAGE NLS missing message: DataServiceEditor_lblNewLabel_1_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.846
+!MESSAGE NLS missing message: DataServiceEditor_lblNewLabel_2_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.846
+!MESSAGE NLS missing message: NewDataInterfaceWizardPage_lblNewLabel_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.847
+!MESSAGE NLS missing message: DataInterfaceEditor_tblclmnNewColumn_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.848
+!MESSAGE NLS missing message: DataInterfaceEditor_text_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.849
+!MESSAGE NLS missing message: DataInterfaceEditor_label_3_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.849
+!MESSAGE NLS missing message: DataInterfaceEditor_textConditionExpreession_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.850
+!MESSAGE NLS missing message: DataInterfaceEditor_textSrcCronExpression_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.850
+!MESSAGE NLS missing message: FieldMetaView_button_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.851
+!MESSAGE NLS missing message: AdapterIdSearchDialog_group_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.851
+!MESSAGE NLS missing message: AdapterIdSearchDialog_label_text in: com.inzent.itools.meta.core.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-22 17:56:11.852
+!MESSAGE NLS missing message: AdapterIdSearchDialog_label_1_text in: com.inzent.itools.meta.core.messages

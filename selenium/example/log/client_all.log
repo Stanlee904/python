@@ -1,0 +1,50 @@
+INFO  [08/29 14:46:01] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 14:46:01] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 14:46:01] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 14:46:01] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 14:46:01] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 14:46:01] (UtilProperties.java:158) Server info -  IOException
+INFO  [08/29 14:46:46] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 14:46:46] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 14:46:46] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 14:46:46] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 14:46:46] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 14:46:47] (UtilProperties.java:158) Server info -  IOException
+INFO  [08/29 14:47:20] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 14:47:20] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 14:47:20] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 14:47:20] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 14:47:20] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 14:47:20] (UtilProperties.java:158) Server info -  IOException
+INFO  [08/29 14:50:29] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 14:50:29] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 14:50:29] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 14:50:29] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 14:50:29] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 14:50:29] (UtilProperties.java:158) Server info -  IOException
+INFO  [08/29 14:56:02] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 14:56:02] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 14:56:02] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 14:56:02] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 14:56:02] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 14:56:02] (UtilProperties.java:158) Server info -  IOException
+INFO  [08/29 15:18:10] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 15:18:10] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 15:18:10] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 15:18:10] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 15:18:10] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 15:18:11] (UtilProperties.java:158) Server info -  IOException
+INFO  [08/29 15:19:19] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 15:19:19] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 15:19:19] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 15:19:19] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 15:19:19] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 15:19:19] (UtilProperties.java:158) Server info -  IOException
+INFO  [08/29 15:20:06] (AAplicationWorkbenchAdvisor.java:177) ----------------------------------------------------------------
+INFO  [08/29 15:20:06] (AAplicationWorkbenchAdvisor.java:178)  JOB-PaSS Client Ver.7.0.1_20200413
+INFO  [08/29 15:20:06] (AAplicationWorkbenchAdvisor.java:179) ----------------------------------------------------------------
+INFO  [08/29 15:20:06] (AAplicationWorkbenchAdvisor.java:180) language::ko
+INFO  [08/29 15:20:06] (AAplicationWorkbenchAdvisor.java:181) language::KR
+ERROR [08/29 15:20:07] (UtilProperties.java:158) Server info -  IOException
+ERROR [08/29 15:20:11] (UtilProperties.java:158) Server info -  IOException
+ERROR [08/29 15:20:12] (UtilProperties.java:158) Server info -  IOException
