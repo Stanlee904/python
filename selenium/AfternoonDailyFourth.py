@@ -46,8 +46,10 @@ def dailyFourthCheck(dailyUrl,dailySaveFile):
                     chromeFuture = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr["+str(index)+"]/td[1]/span").text
                     if futureIndex in chromeFuture and "현물정보" in futureIndex:
                         gbFutureData = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr[15]/td[2]/span").text
+                        print(gbFutureData + "현물정보 +++++ ")
                     else:
                         gbFutureData = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr["+str(index)+"]/td[4]/span").text
+                        print(gbFutureData)
                             
                 gbFutureDataList.append(gbFutureData)        
         

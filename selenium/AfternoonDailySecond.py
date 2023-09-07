@@ -46,16 +46,16 @@ def dailySecondCheck(dailyUrl,dailySaveFile):
                 break
         
         if isCutOffMorningSend == "정상":
-            workSheetDaily['M4'] = 'O'
+            workSheetDaily['M12'] = 'O'
             
         if isPriceBackUpDelete == "정상":
-            workSheetDaily['M6'] = 'O'            
+            workSheetDaily['M13'] = 'O'            
             
         if isNpsForeignCurBondSend == "정상":
-            workSheetDaily['M7'] = 'O'            
+            workSheetDaily['M14'] = 'O'            
         
         if futureCompleteCount == 1:
-            workSheetDaily['M8'] = 'O'
+            workSheetDaily['M15'] = 'O'
         
         wbDaily.save(dailySaveFile)
         

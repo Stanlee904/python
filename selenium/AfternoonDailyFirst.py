@@ -31,7 +31,7 @@ def dailyFirstCheck(dailyUrl,dailyFile,dailySaveFile):
         isRealTimeIssueInform = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[2]/td[1]/span").text
         
         #(월초 작업) 정기예금
-        isFixedDepositAndMMDA = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[2]/td[1]/span").text
+        isFixedDepositAndMMDA = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[47]/td[1]/span").text
         
         #(월말 작업) 로이터 지수
         isReuterCheck = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[46]/td[1]/span").text
@@ -56,15 +56,15 @@ def dailyFirstCheck(dailyUrl,dailyFile,dailySaveFile):
             workSheetDaily['M8'] = 'O'
 
         if isTransitionMatrix == "정상" and isLifeTimePD == "정상" and isLastDayNPS == "정상":
-            workSheetDaily['M8'] = 'O'
             workSheetDaily['M9'] = 'O'
             workSheetDaily['M10'] = 'O'
+            workSheetDaily['M11'] = 'O'
         elif isTransitionMatrix == "정상" and isLifeTimePD == "정상" and isLastDayNPS == "미입력":
-            workSheetDaily['M8'] = 'O'
             workSheetDaily['M9'] = 'O'
+            workSheetDaily['M10'] = 'O'
         elif isTransitionMatrix == "미입력" and isLifeTimePD == "정상" and isLastDayNPS == "정상":
             workSheetDaily['M9'] = 'O'
-            workSheetDaily['M10'] = 'O'
+            workSheetDaily['M11'] = 'O'
         
         wbDaily.save(dailySaveFile)
         

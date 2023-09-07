@@ -35,16 +35,15 @@ def dailySixthCheck(dailyUrl,dailySaveFile):
         isServerCheck33 = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[44]/td[1]/span").text
         
         
-        
         #국민연금 보유종목수신 (SW_01 / FX_02)
         isNpsHoldingsReceive = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[30]/td[1]/span").text
-        
+                
         #BEFORE 6 확인
         isBefore6Chk = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[45]/td[1]/span").text
         
         
         if isKofiaMatrixAndCDCPMatrix == "정상":
-            workSheetDaily['M30'] = 'O'
+            workSheetDaily['M32'] = 'O'
             
         if isServerCheck3 == "정상" and isServerCheck33 == "정상":
             workSheetDaily['M33'] = 'O'
@@ -53,7 +52,7 @@ def dailySixthCheck(dailyUrl,dailySaveFile):
             workSheetDaily['M34'] = 'O'
             
         if isBefore6Chk == "정상":
-            workSheetDaily['M34'] = 'O'
+            workSheetDaily['M36'] = 'O'
         
         wbDaily.save(dailySaveFile)
         

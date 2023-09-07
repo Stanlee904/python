@@ -18,6 +18,8 @@ day = curTime.strftime("%d")
 def dailyThirdCheck(dailyUrl,dailySaveFile):
     try:
         
+        irsRateCount = 0
+        
         #엑셀 파일 로드 하기
         wbDaily = load_workbook(dailySaveFile)
         workSheetDaily = wbDaily["Sheet1"]        
@@ -38,7 +40,12 @@ def dailyThirdCheck(dailyUrl,dailySaveFile):
         #KOSCOM - NICE - CITI은행 전송
         isKosNiceCitiSend = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[26]/td[1]/span").text
         
-        
+        #IRS RATE
+        for index in range(19,24):
+            irsCorrect = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr["+str(index)+"]/td[1]/span").text
+            if irsCorrect == "정상":
+                irsRateCount += 1
+            
         
         #세금계산
         
@@ -54,6 +61,9 @@ def dailyThirdCheck(dailyUrl,dailySaveFile):
         
         if isKosNiceCitiSend == "정상":
             workSheetDaily['M20'] = 'O'
+            
+        if irsRateCount == 5:
+            workSheetDaily['M21'] = 'O'
         
         wbDaily.save(dailySaveFile)
         
