@@ -4,6 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from datetime import datetime
 from openpyxl import load_workbook
+from pywinauto import application
+from pywinauto import findwindows
 import time
 
 
@@ -47,7 +49,30 @@ def dailyThirdCheck(dailyUrl,dailySaveFile):
                 irsRateCount += 1
             
         
-        #세금계산
+        #세금계산        
+        # app = application.Application(backend='uia').start("C:\\Users\\user\\AppData\\Roaming\\NICE P&I\\NICE P&I\\NICE피앤아이.exe")
+        # dlg = app['NICE피앤아이 V 2.81']
+        
+        # dlg.child_window(title="통합시스템", auto_id="8", control_type="Button").click_input()
+        
+        # time.sleep(5)
+        
+        # procs = findwindows.find_elements()
+
+        # for proc in procs:
+        #     tempProc = f"{proc}"        
+        #     if '통합 System' in tempProc:
+        #         tempProcessId = proc.process_id
+            
+        # app2 = application.Application(backend='uia').connect(process=tempProcessId)
+        
+        # dlg2 = app2['Dialog']
+        
+        # dlg2.child_window(title="기타", control_type="MenuItem").select()
+                
+        # dlg2['세금계산MenuItem2'].select()
+        
+        # dlg2['생성Button'].click()
         
                 
         if isMMFRate == "정상":

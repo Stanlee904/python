@@ -13,8 +13,11 @@ year = curTime.strftime("%Y")
 month = curTime.strftime("%m")
 day = curTime.strftime("%d")
 
-futureCheckList = ["종목정보", "종목마감", "정산가격", "현물정보결제기준채권","30 종가단일가","M2 당일 확정"]
+futureCheckList = ["종목정보", "30 종가단일가","종목마감", "M2 당일 확정","정산가격", "현물정보결제기준채권",]
 gbFutureDataList = []
+
+dailyUrl = "http://222.111.237.40:11110/main"
+dailySaveFile = "D:\새 폴더\오후데일리_자동화_"+year+month+day+".xlsx"
 
 
 def dailyFourthCheck(dailyUrl,dailySaveFile):
@@ -37,25 +40,36 @@ def dailyFourthCheck(dailyUrl,dailySaveFile):
         # #예탁원 데이터 수신
         isKsdReceive = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[33]/td[1]/span").text
         
-        # #Daily 선물 수신 확인
+        # #Daily 선물 수신 확인 (이 부분 다시 로직 짜기 -> 20230907)
         for index in range(1,16):
             for futureIndex in futureCheckList:
                 # 병합 되어 있으면 값을 못 읽음. 
                 # chromeFuture = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr["+str(index)+"]/th/span").text
                 if chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr["+str(index)+"]/td[1]/span").is_displayed() == True:
                     chromeFuture = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr["+str(index)+"]/td[1]/span").text
-                    if futureIndex in chromeFuture and "현물정보" in futureIndex:
+                    print(chromeFuture)
+                    if "현물정보" in chromeFuture and "기준채권" in chromeFuture:
                         gbFutureData = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr[15]/td[2]/span").text
                         print(gbFutureData + "현물정보 +++++ ")
-                    else:
+                        gbFutureDataList.append(gbFutureData)
+                        break
+                    elif futureIndex in chromeFuture:
+                        print(futureIndex+" in "+chromeFuture)
                         gbFutureData = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[1]/section[2]/article/div/table/tbody/tr["+str(index)+"]/td[4]/span").text
+                        gbFutureDataList.append(gbFutureData)
                         print(gbFutureData)
-                            
-                gbFutureDataList.append(gbFutureData)        
+                
+            
+            print(gbFutureDataList)
+                        
+
         
-        
+        print("1234")
         for index2 in range(0,len(futureCheckList)):
-            dailyFutureTotal += futureCheckList[index2] + " : " + gbFutureDataList[index2] + " / "
+            if index2 == len(futureCheckList)-1:
+                dailyFutureTotal += futureCheckList[index2] + " : " + gbFutureDataList[index2]
+            else:
+                dailyFutureTotal += futureCheckList[index2] + " : " + gbFutureDataList[index2] + " / "
         
         
         #산업은행 보유종목 수신 확인
@@ -73,15 +87,16 @@ def dailyFourthCheck(dailyUrl,dailySaveFile):
         #해외지수 입력
         
 
-        
+        print("5678")
         if isEachBondSendOpenCheck == "정상":
             workSheetDaily['M24'] = 'O'
-            
+        print("0123")
         if isKsdReceive == "정상":
             workSheetDaily['M25'] = 'O'
-            
+        print("5578")
         workSheetDaily['E26'] = dailyFutureTotal
         
+        print("9988")
         if kdbHoldingsCount == 5:
             workSheetDaily['M29'] = 'O'
         
@@ -90,3 +105,6 @@ def dailyFourthCheck(dailyUrl,dailySaveFile):
     except Exception as ex:
         print("dailyFourthCheck 오류 발생!")
         print(ex)
+        
+        
+dailyFourthCheck(dailyUrl,dailySaveFile)        

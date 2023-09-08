@@ -86,6 +86,7 @@ second = curTime.strftime("%S")
 # dlg2['저장(S)'].click()
 
 
+
 # time.sleep(2)
 
 
@@ -159,12 +160,33 @@ second = curTime.strftime("%S")
 
 try:
         
-    app = application.Application(backend='uia').start("C:\\Program Files (x86)\\Microsoft\\Remote Desktop Connection Manager\\RDCMan.exe")
-    dlg = app['Remote - Remote Desktop Connection Manager v2.7']
+    app = application.Application(backend='uia').start("C:\\Users\\user\\AppData\\Roaming\\NICE P&I\\NICE P&I\\NICE피앤아이.exe")
+    dlg = app['NICE피앤아이 V 2.81']
     
-    #time.sleep(3)
+    dlg.child_window(title="통합시스템", auto_id="8", control_type="Button").click_input()
+    
+    time.sleep(5)
+    
+    procs = findwindows.find_elements()
+
+    for proc in procs:
+        # print(f"{proc}  / 프로세스: {proc.process_id}")
+        tempProc = f"{proc}"        
+        if '통합 System' in tempProc:
+            tempProcessId = proc.process_id
         
-    #dlg.print_control_identifiers()
+    app2 = application.Application(backend='uia').connect(process=tempProcessId)
+    
+    # print("**************||" +str(tempProcessId) + "||****************")
+    dlg2 = app2['Dialog']
+    
+    dlg2.child_window(title="기타", control_type="MenuItem").select()
+            
+    #time.sleep(3)
+    
+    dlg2['세금계산MenuItem2'].select()
+        
+    dlg2.print_control_identifiers()
     
     # dlg.child_window(title="10.0.1.45_배치_Win2012_Server_R2", auto_id="1448272", control_type="Button").click()
     # dlg['10.0.1.45_배치_Win2012_Server_R2TreeItem'].select()
@@ -184,7 +206,7 @@ try:
     # procs = findwindows.find_elements()
 
     # for proc in procs:
-    #     # print(f"{proc}  / 프로세스: {proc.process_id}")
+    #     print(f"{proc}  / 프로세스: {proc.process_id}")
     #     tempProc = f"{proc}"        
     #     if '통합 System' in tempProc:
     #         tempProcessId = proc.process_id
