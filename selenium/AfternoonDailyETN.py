@@ -10,10 +10,12 @@ year = curTime.strftime("%Y")
 month = curTime.strftime("%m")
 day = curTime.strftime("%d")
 
-etnCount = 0
 
 def dailyETNCheck(dailySaveFile):
     try:
+        
+        etnCount = 0
+        
         #엑셀 파일 로드 하기
         wbDaily = load_workbook(dailySaveFile)
         workSheetDaily = wbDaily["Sheet1"]    

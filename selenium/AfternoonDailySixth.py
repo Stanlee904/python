@@ -6,15 +6,10 @@ from datetime import datetime
 from openpyxl import load_workbook
 import time
 
-
-
 curTime = datetime.today()
 year = curTime.strftime("%Y")
 month = curTime.strftime("%m")
 day = curTime.strftime("%d")
-
-
-
 
 def dailySixthCheck(dailyUrl,dailySaveFile):
     try:
@@ -40,7 +35,6 @@ def dailySixthCheck(dailyUrl,dailySaveFile):
                 
         #BEFORE 6 확인
         isBefore6Chk = chrome.find_element(By.XPATH, "/html/body/div/div/section/section[2]/section[1]/article/div/table/tbody/tr[45]/td[1]/span").text
-        
         
         if isKofiaMatrixAndCDCPMatrix == "정상":
             workSheetDaily['M32'] = 'O'

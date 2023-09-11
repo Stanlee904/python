@@ -35,7 +35,7 @@ try:
     fileCheck()
     AfternoonDailyFirst.dailyFirstCheck(dailyUrl,dailyFile,dailySaveFile)
     #outlook 실거래 데이터 수신확인 Check
-    # AfternoonDailyETN.dailyETNCheck(dailySaveFile)
+    AfternoonDailyETN.dailyETNCheck(dailySaveFile)
     AfternoonDailySecond.dailySecondCheck(dailyUrl,dailySaveFile)
     AfternoonDailyThird.dailyThirdCheck(dailyUrl,dailySaveFile)
     AfternoonDailyFourth.dailyFourthCheck(dailyUrl,dailySaveFile)

@@ -184,9 +184,19 @@ try:
             
     #time.sleep(3)
     
-    dlg2['세금계산MenuItem2'].select()
+    dlg2['데이터검수후일괄작업MenuItem2'].select()
+    
+    
+    dlg2['기업별신용정보생성MenuItem'].select()
+    
+    dlg2['생성Button'].click()
+    
+    time.sleep(60000)
+    
+    app2.kill() # app종료
+    
+    
         
-    dlg2.print_control_identifiers()
     
     # dlg.child_window(title="10.0.1.45_배치_Win2012_Server_R2", auto_id="1448272", control_type="Button").click()
     # dlg['10.0.1.45_배치_Win2012_Server_R2TreeItem'].select()
